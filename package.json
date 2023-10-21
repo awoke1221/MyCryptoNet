@@ -1,0 +1,28 @@
+{
+  "name": "block",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "Node_1": "nodemon --watch dev -e js Server.js 3001 https://localhost:3001",
+    "Node_2": "nodemon --watch dev -e js Server.js 3002 https://localhost:3002",
+    "Node_3": "nodemon --watch dev -e js Server.js 3003 https://localhost:3003"
+  },
+  "author": "Awoke Zemenu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "chai": "^4.3.7",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1",
+    "sha256": "^0.2.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/sha256": "^0.2.0"
+  }
+}
