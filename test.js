@@ -28,7 +28,7 @@ describe("Blockchain", ()=>{
     assert.isNumber(nonce);
     assert.equal(lastBlockIndexNumber, 1);
   })
-
+ 
   it('should add a new transaction to the pending transactions', ()=>{
     const amount = 21
     const sender = 'awskiu1231kjh'
