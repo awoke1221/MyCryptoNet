@@ -61,14 +61,12 @@ class Blockchain{
     mineBlock(previousHash,currentBlockData){
         let nonce = 0
         let hash = this.hashBlock(previousHash,currentBlockData,nonce)
-        while(hash.substring(0, 5) !== '00000'){
+        while(hash.substring(0, 3) !== '000'){
             nonce +=1
             hash = this.hashBlock(previousHash,currentBlockData,nonce)
         }
         return nonce
     }
-
-   
 
     registerNode(nodeurl){
         this.networkNodes.push(nodeurl)
